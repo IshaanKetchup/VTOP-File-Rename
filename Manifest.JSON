@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Selective Download Renamer",
+  "version": "1.0",
+  "permissions": ["downloads", "storage"],
+  "host_permissions": [
+    "https://vtop.vit.ac.in/vtop/content/*",
+    "https://vtop.vit.ac.in/vtop/downloadPdf*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://vtop.vit.ac.in/vtop/content/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
