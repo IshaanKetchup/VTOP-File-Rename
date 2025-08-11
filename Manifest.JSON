@@ -3,6 +3,9 @@
   "name": "Selective Download Renamer",
   "version": "1.0",
   "permissions": ["downloads", "storage"],
+  "action": {
+    "default_popup": "popup.html"
+  },
   "host_permissions": [
     "https://vtop.vit.ac.in/vtop/content/*",
     "https://vtop.vit.ac.in/vtop/downloadPdf*"
