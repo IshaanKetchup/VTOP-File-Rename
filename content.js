@@ -27,7 +27,7 @@ document.addEventListener('click', async (e) => {
   }
 
   const cells = row.querySelectorAll('td');
-  const topicContentCell = cells[2];  // Adjust index if needed
+  const topicContentCell = cells[3];  // Adjust index if needed
   const topicText = topicContentCell ? topicContentCell.textContent.trim() : "Downloaded";
 
   try {
